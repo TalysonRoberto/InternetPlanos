@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap" rel="stylesheet">
+    <title>Internet</title>
+</head>
+<body>
+
+    <header>
+        <div class="navbar-logo" id="home">
+            <a href="index.html"><img src="imagens/Logo-Test.png" alt="Logo" /></a>
+        </div>
+
+        <div class="icon-container">
+            <div class="icon">
+                <img src="icon/whatsapp.png" alt="Ícone 1" />
+            </div>
+            <div class="icon">
+                <img src="icon/instagram.png" alt="Ícone 2" />
+            </div>
+            <div class="icon">
+                <img src="icon/facebook.png" alt="Ícone 3" />
+            </div>
+        </div>
+    </header>
+
+    <nav>
+        <a href="./index.html">Home</a>
+        <a href="./index.html#casa">Pra sua casa</a>
+        <a href="./empresa.html">Pra sua empresa</a>
+        <a href="./suport.html">Suporte</a>
+        <a href="./fale_conosco.html">Fale conosco</a>
+    </nav>
+    
+
+    <article id="menu_referencia_fale_conosco">
+        <article>
+            <div class="texto"> 
+                <img src="icon/icons8-telefone-mensagem-50.png" alt="Ícone 1" />
+                <h3>Entre em contato</h3>
+            </div>
+        </article>
+    </article>
+
+    <section>
+        <div class="articles-container">
+            <article class="texto">
+                <div id="conteiner">
+                    <div class="sup">
+                        <div class="texto">
+                            <h1>FALE CONOSCO</h1>
+                            <p>Estamos a disposição para tirar qualquer dúvida relacionado aos nossos serviços, ou para envio de críticas e sugestões</p>
+                            <br>
+                            <div class="contato">
+                                <img src="icon/icons8-whatsapp-50.png" alt="Ícone 1" /> 
+                                <div>
+                                    Atendimento por whatsapp
+                                    <h2>(88) 8 8888-8888</h2>
+                                </div> 
+                            </div>
+                            <div class="contato">
+                                <img src="icon/icons8-telefone-mensagem-50.png" alt="Ícone 1" /> 
+                                <div>                                    
+                                    Atendimento por telefone
+                                    <h2>(88) 8 8888-8888</h2>
+                                </div> 
+                            </div>
+                            <div class="contato">
+                                <img src="icon/icons8-nova-mensagem-50.png" alt="Ícone 1" /> 
+                                <div>
+                                    E-mail
+                                    <h2>email@email.com</h2>
+                                </div> 
+                            </div>
+                        </div>
+                    </div>
+                    <div class="sup">
+                        <div class="forme_cont">
+
+                            <form>
+                                <label for="nome">Seu nome:</label>
+                                <input type="text" id="nome" name="nome" placeholder="Ex: João da Silva" required>
+                        
+                                <label for="telefone">Seu telefone:</label>
+                                <input type="tel" id="telefone" name="telefone" placeholder="(11) 99999-9999" pattern="\(\d{2}\) \d{4,5}-\d{4}" required>
+                        
+                                <label for="email">Seu e-mail:</label>
+                                <input type="email" id="email" name="email" placeholder="joao@meuemail.com.br" required>
+                        
+                                <label for="categoria">Categoria:</label>
+                                <select id="categoria" name="categoria" required>
+                                    <option value="">Selecione uma categoria</option>
+                                    <option value="contratar">Quero Contratar</option>
+                                    <option value="financeiro">Financeiro</option>
+                                    <option value="suporte">Suporte</option>
+                                    <option value="cancelamento">Cancelamento</option>
+                                    <option value="sugestões">Críticas e/ou Sugestões</option>
+                                </select>
+                        
+                                <label for="mensagem">Sua mensagem:</label>
+                                <textarea id="mensagem" name="mensagem" placeholder="Nos envie uma mensagem" required></textarea>
+                        
+                                <div class="checkbox-group">
+                                    <input type="checkbox" id="termos" name="termos" required>
+                                    <label for="termos">Aceito os termos de uso e política de privacidade.</label>
+                                </div>
+                        
+                                <button type="button" onclick="enviarWhatsApp()">Enviar</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+
+
+    <footer>
+        <div id="conteiner" style="margin-top: 50px;">
+            <div class="texto">
+                <img src="icon/icons8-whatsapp-50.png" alt="Ícone 1" />
+                <p> <b>WHATSAPP:</b>  (88) 8 8888-8888</p>
+            </div>
+            <div class="texto">
+                <img src="icon/icons8-telefone-mensagem-50.png" alt="Ícone 1" />
+                <p>  <b>TELEFONE:</b> (88) 8 8888-8888</p>
+            </div>
+            <div class="texto">
+                <img src="icon/icons8-nova-mensagem-50.png" alt="Ícone 1" />
+                <p>  <b>EMAIL:</b> email@email.com</p>
+            </div>
+        </div>
+
+        <div class="linha"></div>
+
+        <div id="conteiner" style="margin-top: 50px;">
+            <div class="notas">
+                <div><a href="./index.html">Home</a></div>
+                <div><a href="index.html#casa">Pra sua casa</a></div>
+            </div>
+            <div class="notas">
+                <div><a href="./empresa.html">Pra sua empresa</a></div>
+                <div><a href="./suport.html">Suporte</a></div>
+            </div>
+            <div class="notas">
+                <div><a href="#home">Fale conosco</a></div>
+                <div><a href="#home">Voltar ao início</a></div>
+            </div>
+        </div>
+
+        <p>&copy; 2025 Meu Site. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
